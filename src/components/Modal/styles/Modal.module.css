@@ -1,0 +1,17 @@
+.modal { width: min(30rem, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); overflow-y: auto; overscroll-behavior: contain; margin: auto; padding: var(--space-8); border: 1px solid var(--color-border); border-radius: var(--radius-dialog); background: var(--color-surface); color: var(--color-text); box-shadow: var(--shadow-lg); text-align: center; }
+.modal[open] { animation: appear var(--duration-normal) var(--ease-standard); }
+.modal::backdrop { background: rgb(38 50 56 / 40%); }
+.modal { max-height: calc(100vh - 2rem); max-height: calc(100dvh - 2rem); overflow-wrap: anywhere; min-width: 0; }
+.modal h2 { font-size: var(--font-size-xl); line-height: var(--line-height-tight); }
+.close { position: absolute; top: var(--space-2); right: var(--space-2); display: grid; place-items: center; width: var(--control-min-height); height: var(--control-min-height); border: 0; border-radius: var(--radius-control); background: transparent; color: var(--color-text-secondary); }
+.close:hover { background: var(--color-background); }
+.icon { display: grid; place-items: center; width: 64px; height: 64px; margin: var(--space-3) auto var(--space-5); border-radius: 50%; background: var(--color-success-background); color: var(--color-success-text); }
+.message { margin-top: var(--space-3); color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+.summary { display: grid; gap: var(--space-2); padding: var(--space-4); margin-top: var(--space-5); background: var(--color-background); border: 1px solid var(--color-border); border-radius: var(--radius-control); text-align: left; font-size: var(--font-size-sm); overflow-wrap: anywhere; }
+.summary p { color: var(--color-text-secondary); }
+.actions { display: flex; gap: var(--space-3); margin-top: var(--space-6); }
+.actions > * { flex: 1; }
+.actions button:not(:first-child), .actions button:only-child { color: var(--color-text); }
+@keyframes appear { from { opacity: 0; transform: scale(.97); } to { opacity: 1; transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .modal[open] { animation: none; } }
+@media (max-width: 480px) { .modal { padding: var(--space-6); } .actions { flex-direction: column; } }

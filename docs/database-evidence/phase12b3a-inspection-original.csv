@@ -1,0 +1,645 @@
+section,metadata,total_rows
+01_context,"{""database"":""postgres"",""captured_at"":""2026-11-04T02:41:57.408671+00:00"",""server_version"":""17.11"",""inspection_role"":""postgres"",""transaction_read_only"":""on""}",644
+02_schema_inventory,"{""acl"":[""pg_database_owner=UC/pg_database_owner"",""=U/pg_database_owner"",""postgres=U/pg_database_owner"",""anon=U/pg_database_owner"",""authenticated=U/pg_database_owner"",""service_role=U/pg_database_owner""],""owner"":""pg_database_owner"",""schema"":""public""}",644
+02_schema_inventory,"{""acl"":[""postgres=UC/postgres"",""anon=U/postgres"",""authenticated=U/postgres"",""service_role=U/postgres"",""dashboard_user=UC/postgres""],""owner"":""postgres"",""schema"":""extensions""}",644
+02_schema_inventory,"{""acl"":[""supabase_admin=UC/supabase_admin"",""anon=U/supabase_admin"",""authenticated=U/supabase_admin"",""service_role=U/supabase_admin"",""supabase_auth_admin=UC/supabase_admin"",""dashboard_user=UC/supabase_admin"",""postgres=U/supabase_admin""],""owner"":""supabase_admin"",""schema"":""auth""}",644
+02_schema_inventory,"{""acl"":[""supabase_admin=UC/supabase_admin"",""postgres=U*/supabase_admin"",""anon=U/supabase_admin"",""authenticated=U/supabase_admin"",""service_role=U/supabase_admin"",""supabase_storage_admin=U*C*/supabase_admin"",""dashboard_user=UC/supabase_admin""],""owner"":""supabase_admin"",""schema"":""storage""}",644
+02_schema_inventory,"{""acl"":[""supabase_admin=UC/supabase_admin"",""postgres=U*/supabase_admin"",""anon=U/supabase_admin"",""authenticated=U/supabase_admin"",""service_role=U/supabase_admin""],""owner"":""supabase_admin"",""schema"":""graphql_public""}",644
+02_schema_inventory,"{""acl"":[""supabase_admin=UC/supabase_admin"",""postgres=U*/supabase_admin"",""anon=U/supabase_admin"",""authenticated=U/supabase_admin"",""service_role=U/supabase_admin""],""owner"":""supabase_admin"",""schema"":""graphql""}",644
+02_schema_inventory,"{""acl"":[""supabase_admin=UC/supabase_admin"",""postgres=U*/supabase_admin"",""anon=U/supabase_admin"",""service_role=U/supabase_admin"",""supabase_realtime_admin=UC/supabase_admin"",""authenticated=U/supabase_admin""],""owner"":""supabase_admin"",""schema"":""realtime""}",644
+02_schema_inventory,"{""acl"":[""supabase_admin=UC/supabase_admin"",""postgres=U*/supabase_admin"",""service_role=U/supabase_admin""],""owner"":""supabase_admin"",""schema"":""vault""}",644
+03_relations,"{""acl"":[""postgres=arwdDxtm/postgres"",""anon=arwdDxtm/postgres"",""authenticated=arwdDxtm/postgres"",""service_role=arwdDxtm/postgres""],""kind"":""r"",""name"":""events"",""owner"":""postgres"",""schema"":""public"",""options"":null,""rls_forced"":false,""rls_enabled"":true,""is_partition"":false,""partition_bound"":null,""view_definition"":null}",644
+03_relations,"{""acl"":[""postgres=arwdDxtm/postgres"",""anon=rDxtm/postgres"",""authenticated=rDxtm/postgres"",""service_role=arwdDxtm/postgres""],""kind"":""r"",""name"":""attendance"",""owner"":""postgres"",""schema"":""public"",""options"":null,""rls_forced"":false,""rls_enabled"":true,""is_partition"":false,""partition_bound"":null,""view_definition"":null}",644
+03_relations,"{""acl"":[""postgres=arwdDxtm/postgres"",""anon=rDxtm/postgres"",""authenticated=rDxtm/postgres"",""service_role=arwdDxtm/postgres""],""kind"":""r"",""name"":""profiles"",""owner"":""postgres"",""schema"":""public"",""options"":null,""rls_forced"":false,""rls_enabled"":true,""is_partition"":false,""partition_bound"":null,""view_definition"":null}",644
+03_relations,"{""acl"":[""postgres=arwdDxtm/postgres"",""anon=rDxtm/postgres"",""authenticated=rDxtm/postgres"",""service_role=arwdDxtm/postgres""],""kind"":""r"",""name"":""registrations"",""owner"":""postgres"",""schema"":""public"",""options"":null,""rls_forced"":false,""rls_enabled"":true,""is_partition"":false,""partition_bound"":null,""view_definition"":null}",644
+04_columns,"{""acl"":[""authenticated=w/postgres""],""type"":""text"",""table"":""public.profiles"",""column"":""full_name"",""default"":""''::text"",""identity"":"""",""not_null"":true,""position"":2,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""integer"",""table"":""public.events"",""column"":""capacity"",""default"":null,""identity"":"""",""not_null"":true,""position"":9,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""text"",""table"":""public.events"",""column"":""category"",""default"":null,""identity"":"""",""not_null"":true,""position"":4,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""text"",""table"":""public.events"",""column"":""description"",""default"":""''::text"",""identity"":"""",""not_null"":true,""position"":5,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""text"",""table"":""public.events"",""column"":""image_url"",""default"":null,""identity"":"""",""not_null"":false,""position"":11,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""text"",""table"":""public.events"",""column"":""status"",""default"":""'draft'::text"",""identity"":"""",""not_null"":true,""position"":10,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""text"",""table"":""public.events"",""column"":""title"",""default"":null,""identity"":"""",""not_null"":true,""position"":3,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""text"",""table"":""public.events"",""column"":""venue"",""default"":null,""identity"":"""",""not_null"":true,""position"":6,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""text"",""table"":""public.profiles"",""column"":""role"",""default"":""'student'::text"",""identity"":"""",""not_null"":true,""position"":3,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""text"",""table"":""public.registrations"",""column"":""status"",""default"":""'registered'::text"",""identity"":"""",""not_null"":true,""position"":4,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""timestamp with time zone"",""table"":""public.attendance"",""column"":""checked_in_at"",""default"":""now()"",""identity"":"""",""not_null"":true,""position"":4,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""timestamp with time zone"",""table"":""public.events"",""column"":""created_at"",""default"":""now()"",""identity"":"""",""not_null"":true,""position"":12,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""timestamp with time zone"",""table"":""public.events"",""column"":""ends_at"",""default"":null,""identity"":"""",""not_null"":true,""position"":8,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""timestamp with time zone"",""table"":""public.events"",""column"":""starts_at"",""default"":null,""identity"":"""",""not_null"":true,""position"":7,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""timestamp with time zone"",""table"":""public.profiles"",""column"":""created_at"",""default"":""now()"",""identity"":"""",""not_null"":true,""position"":4,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""timestamp with time zone"",""table"":""public.registrations"",""column"":""registered_at"",""default"":""now()"",""identity"":"""",""not_null"":true,""position"":5,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""uuid"",""table"":""public.attendance"",""column"":""event_id"",""default"":null,""identity"":"""",""not_null"":true,""position"":3,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""uuid"",""table"":""public.attendance"",""column"":""id"",""default"":""gen_random_uuid()"",""identity"":"""",""not_null"":true,""position"":1,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""uuid"",""table"":""public.attendance"",""column"":""registration_id"",""default"":null,""identity"":"""",""not_null"":true,""position"":2,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""uuid"",""table"":""public.attendance"",""column"":""scanned_by"",""default"":null,""identity"":"""",""not_null"":false,""position"":5,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""uuid"",""table"":""public.events"",""column"":""id"",""default"":""gen_random_uuid()"",""identity"":"""",""not_null"":true,""position"":1,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""uuid"",""table"":""public.events"",""column"":""organizer_id"",""default"":null,""identity"":"""",""not_null"":true,""position"":2,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""uuid"",""table"":""public.profiles"",""column"":""id"",""default"":null,""identity"":"""",""not_null"":true,""position"":1,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""uuid"",""table"":""public.registrations"",""column"":""event_id"",""default"":null,""identity"":"""",""not_null"":true,""position"":2,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""uuid"",""table"":""public.registrations"",""column"":""id"",""default"":""gen_random_uuid()"",""identity"":"""",""not_null"":true,""position"":1,""generated"":""""}",644
+04_columns,"{""acl"":null,""type"":""uuid"",""table"":""public.registrations"",""column"":""student_id"",""default"":null,""identity"":"""",""not_null"":true,""position"":3,""generated"":""""}",644
+05_constraints,"{""kind"":""c"",""name"":""events_capacity_check"",""table"":""events"",""validated"":true,""deferrable"":false,""definition"":""CHECK (capacity > 0)"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""c"",""name"":""events_status_check"",""table"":""events"",""validated"":true,""deferrable"":false,""definition"":""CHECK (status = ANY (ARRAY['draft'::text, 'published'::text, 'cancelled'::text]))"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""c"",""name"":""profiles_role_check"",""table"":""profiles"",""validated"":true,""deferrable"":false,""definition"":""CHECK (role = ANY (ARRAY['student'::text, 'organizer'::text]))"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""c"",""name"":""registrations_status_check"",""table"":""registrations"",""validated"":true,""deferrable"":false,""definition"":""CHECK (status = ANY (ARRAY['registered'::text, 'cancelled'::text]))"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""c"",""name"":""valid_event_dates"",""table"":""events"",""validated"":true,""deferrable"":false,""definition"":""CHECK (ends_at > starts_at)"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""c"",""name"":""valid_profile_full_name"",""table"":""profiles"",""validated"":true,""deferrable"":false,""definition"":""CHECK (char_length(full_name) <= 100)"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""f"",""name"":""attendance_registration_id_event_id_fkey"",""table"":""attendance"",""validated"":true,""deferrable"":false,""definition"":""FOREIGN KEY (registration_id, event_id) REFERENCES registrations(id, event_id) ON DELETE CASCADE"",""referenced_table"":""registrations"",""initially_deferred"":false}",644
+05_constraints,"{""kind"":""f"",""name"":""attendance_scanned_by_fkey"",""table"":""attendance"",""validated"":true,""deferrable"":false,""definition"":""FOREIGN KEY (scanned_by) REFERENCES profiles(id)"",""referenced_table"":""profiles"",""initially_deferred"":false}",644
+05_constraints,"{""kind"":""f"",""name"":""events_organizer_id_fkey"",""table"":""events"",""validated"":true,""deferrable"":false,""definition"":""FOREIGN KEY (organizer_id) REFERENCES profiles(id)"",""referenced_table"":""profiles"",""initially_deferred"":false}",644
+05_constraints,"{""kind"":""f"",""name"":""profiles_id_fkey"",""table"":""profiles"",""validated"":true,""deferrable"":false,""definition"":""FOREIGN KEY (id) REFERENCES auth.users(id) ON DELETE CASCADE"",""referenced_table"":""auth.users"",""initially_deferred"":false}",644
+05_constraints,"{""kind"":""f"",""name"":""registrations_event_id_fkey"",""table"":""registrations"",""validated"":true,""deferrable"":false,""definition"":""FOREIGN KEY (event_id) REFERENCES events(id) ON DELETE CASCADE"",""referenced_table"":""events"",""initially_deferred"":false}",644
+05_constraints,"{""kind"":""f"",""name"":""registrations_student_id_fkey"",""table"":""registrations"",""validated"":true,""deferrable"":false,""definition"":""FOREIGN KEY (student_id) REFERENCES profiles(id) ON DELETE CASCADE"",""referenced_table"":""profiles"",""initially_deferred"":false}",644
+05_constraints,"{""kind"":""p"",""name"":""attendance_pkey"",""table"":""attendance"",""validated"":true,""deferrable"":false,""definition"":""PRIMARY KEY (id)"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""p"",""name"":""events_pkey"",""table"":""events"",""validated"":true,""deferrable"":false,""definition"":""PRIMARY KEY (id)"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""p"",""name"":""profiles_pkey"",""table"":""profiles"",""validated"":true,""deferrable"":false,""definition"":""PRIMARY KEY (id)"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""p"",""name"":""registrations_pkey"",""table"":""registrations"",""validated"":true,""deferrable"":false,""definition"":""PRIMARY KEY (id)"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""u"",""name"":""attendance_registration_id_key"",""table"":""attendance"",""validated"":true,""deferrable"":false,""definition"":""UNIQUE (registration_id)"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""u"",""name"":""registrations_event_id_student_id_key"",""table"":""registrations"",""validated"":true,""deferrable"":false,""definition"":""UNIQUE (event_id, student_id)"",""referenced_table"":null,""initially_deferred"":false}",644
+05_constraints,"{""kind"":""u"",""name"":""registrations_id_event_id_key"",""table"":""registrations"",""validated"":true,""deferrable"":false,""definition"":""UNIQUE (id, event_id)"",""referenced_table"":null,""initially_deferred"":false}",644
+06_indexes,"{""index"":""attendance_pkey"",""ready"":true,""table"":""attendance"",""valid"":true,""unique"":true,""definition"":""CREATE UNIQUE INDEX attendance_pkey ON public.attendance USING btree (id)""}",644
+06_indexes,"{""index"":""attendance_registration_id_key"",""ready"":true,""table"":""attendance"",""valid"":true,""unique"":true,""definition"":""CREATE UNIQUE INDEX attendance_registration_id_key ON public.attendance USING btree (registration_id)""}",644
+06_indexes,"{""index"":""events_pkey"",""ready"":true,""table"":""events"",""valid"":true,""unique"":true,""definition"":""CREATE UNIQUE INDEX events_pkey ON public.events USING btree (id)""}",644
+06_indexes,"{""index"":""profiles_pkey"",""ready"":true,""table"":""profiles"",""valid"":true,""unique"":true,""definition"":""CREATE UNIQUE INDEX profiles_pkey ON public.profiles USING btree (id)""}",644
+06_indexes,"{""index"":""registrations_event_id_student_id_key"",""ready"":true,""table"":""registrations"",""valid"":true,""unique"":true,""definition"":""CREATE UNIQUE INDEX registrations_event_id_student_id_key ON public.registrations USING btree (event_id, student_id)""}",644
+06_indexes,"{""index"":""registrations_id_event_id_key"",""ready"":true,""table"":""registrations"",""valid"":true,""unique"":true,""definition"":""CREATE UNIQUE INDEX registrations_id_event_id_key ON public.registrations USING btree (id, event_id)""}",644
+06_indexes,"{""index"":""registrations_pkey"",""ready"":true,""table"":""registrations"",""valid"":true,""unique"":true,""definition"":""CREATE UNIQUE INDEX registrations_pkey ON public.registrations USING btree (id)""}",644
+07_triggers,"{""name"":""check_event_capacity"",""table"":""events"",""enabled"":""O"",""function"":""validate_event_capacity()"",""internal"":false,""definition"":""CREATE TRIGGER check_event_capacity BEFORE UPDATE OF capacity ON events FOR EACH ROW EXECUTE FUNCTION validate_event_capacity()""}",644
+07_triggers,"{""name"":""on_auth_user_created"",""table"":""auth.users"",""enabled"":""O"",""function"":""handle_new_user()"",""internal"":false,""definition"":""CREATE TRIGGER on_auth_user_created AFTER INSERT ON auth.users FOR EACH ROW EXECUTE FUNCTION handle_new_user()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_16690"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_16690\"" AFTER DELETE ON auth.users FROM auth.identities NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_16691"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_16691\"" AFTER UPDATE ON auth.users FROM auth.identities NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_16718"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_16718\"" AFTER DELETE ON auth.users FROM auth.sessions NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_16719"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_16719\"" AFTER UPDATE ON auth.users FROM auth.sessions NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_16755"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_16755\"" AFTER DELETE ON auth.users FROM auth.mfa_factors NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_16756"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_16756\"" AFTER UPDATE ON auth.users FROM auth.mfa_factors NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_16946"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_16946\"" AFTER DELETE ON auth.users FROM auth.one_time_tokens NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_16947"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_16947\"" AFTER UPDATE ON auth.users FROM auth.one_time_tokens NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17025"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17025\"" AFTER DELETE ON auth.users FROM auth.oauth_authorizations NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17026"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17026\"" AFTER UPDATE ON auth.users FROM auth.oauth_authorizations NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17044"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17044\"" AFTER DELETE ON auth.users FROM auth.oauth_consents NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17045"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17045\"" AFTER UPDATE ON auth.users FROM auth.oauth_consents NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17139"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17139\"" AFTER DELETE ON auth.users FROM auth.webauthn_credentials NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17140"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17140\"" AFTER UPDATE ON auth.users FROM auth.webauthn_credentials NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17156"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17156\"" AFTER DELETE ON auth.users FROM auth.webauthn_challenges NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17157"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17157\"" AFTER UPDATE ON auth.users FROM auth.webauthn_challenges NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17181"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_setnull_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17181\"" AFTER DELETE ON auth.users FROM auth.scim_users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_setnull_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17182"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17182\"" AFTER UPDATE ON auth.users FROM auth.scim_users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17229"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17229\"" AFTER DELETE ON auth.users FROM auth.mfa_recovery_code_sets NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17230"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17230\"" AFTER UPDATE ON auth.users FROM auth.mfa_recovery_code_sets NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17616"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17616\"" AFTER DELETE ON auth.users FROM profiles NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17617"",""table"":""auth.users"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17617\"" AFTER UPDATE ON auth.users FROM profiles NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17635"",""table"":""profiles"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17635\"" AFTER DELETE ON profiles FROM events NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17636"",""table"":""profiles"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17636\"" AFTER UPDATE ON profiles FROM events NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17655"",""table"":""events"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17655\"" AFTER DELETE ON events FROM registrations NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17656"",""table"":""events"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17656\"" AFTER UPDATE ON events FROM registrations NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17660"",""table"":""profiles"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17660\"" AFTER DELETE ON profiles FROM registrations NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17661"",""table"":""profiles"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17661\"" AFTER UPDATE ON profiles FROM registrations NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17674"",""table"":""profiles"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17674\"" AFTER DELETE ON profiles FROM attendance NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17675"",""table"":""profiles"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17675\"" AFTER UPDATE ON profiles FROM attendance NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17679"",""table"":""registrations"",""enabled"":""O"",""function"":""\""RI_FKey_cascade_del\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17679\"" AFTER DELETE ON registrations FROM attendance NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_cascade_del\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_a_17680"",""table"":""registrations"",""enabled"":""O"",""function"":""\""RI_FKey_noaction_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_a_17680\"" AFTER UPDATE ON registrations FROM attendance NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_noaction_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17618"",""table"":""profiles"",""enabled"":""O"",""function"":""\""RI_FKey_check_ins\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17618\"" AFTER INSERT ON profiles FROM auth.users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_ins\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17619"",""table"":""profiles"",""enabled"":""O"",""function"":""\""RI_FKey_check_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17619\"" AFTER UPDATE ON profiles FROM auth.users NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17637"",""table"":""events"",""enabled"":""O"",""function"":""\""RI_FKey_check_ins\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17637\"" AFTER INSERT ON events FROM profiles NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_ins\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17638"",""table"":""events"",""enabled"":""O"",""function"":""\""RI_FKey_check_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17638\"" AFTER UPDATE ON events FROM profiles NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17657"",""table"":""registrations"",""enabled"":""O"",""function"":""\""RI_FKey_check_ins\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17657\"" AFTER INSERT ON registrations FROM events NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_ins\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17658"",""table"":""registrations"",""enabled"":""O"",""function"":""\""RI_FKey_check_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17658\"" AFTER UPDATE ON registrations FROM events NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17662"",""table"":""registrations"",""enabled"":""O"",""function"":""\""RI_FKey_check_ins\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17662\"" AFTER INSERT ON registrations FROM profiles NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_ins\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17663"",""table"":""registrations"",""enabled"":""O"",""function"":""\""RI_FKey_check_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17663\"" AFTER UPDATE ON registrations FROM profiles NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17676"",""table"":""attendance"",""enabled"":""O"",""function"":""\""RI_FKey_check_ins\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17676\"" AFTER INSERT ON attendance FROM profiles NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_ins\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17677"",""table"":""attendance"",""enabled"":""O"",""function"":""\""RI_FKey_check_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17677\"" AFTER UPDATE ON attendance FROM profiles NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_upd\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17681"",""table"":""attendance"",""enabled"":""O"",""function"":""\""RI_FKey_check_ins\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17681\"" AFTER INSERT ON attendance FROM registrations NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_ins\""()""}",644
+07_triggers,"{""name"":""RI_ConstraintTrigger_c_17682"",""table"":""attendance"",""enabled"":""O"",""function"":""\""RI_FKey_check_upd\""()"",""internal"":true,""definition"":""CREATE CONSTRAINT TRIGGER \""RI_ConstraintTrigger_c_17682\"" AFTER UPDATE ON attendance FROM registrations NOT DEFERRABLE INITIALLY IMMEDIATE FOR EACH ROW EXECUTE FUNCTION \""RI_FKey_check_upd\""()""}",644
+08_routines,"{""acl"":[""=X/postgres"",""postgres=X/postgres"",""anon=X/postgres"",""authenticated=X/postgres"",""service_role=X/postgres""],""name"":""handle_new_user"",""owner"":""postgres"",""result"":""trigger"",""schema"":""public"",""language"":""plpgsql"",""settings"":[""search_path=\""\""""],""arguments"":"""",""signature"":""handle_new_user()"",""definition"":""CREATE OR REPLACE FUNCTION public.handle_new_user()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO ''\nAS $function$\r\nbegin\r\n  insert into public.profiles (\r\n    id,\r\n    full_name,\r\n    role\r\n  )\r\n  values (\r\n    new.id,\r\n    left(\r\n      trim(coalesce(\r\n        new.raw_user_meta_data ->> 'full_name',\r\n        ''\r\n      )),\r\n      100\r\n    ),\r\n    'student'\r\n  );\r\n\r\n  return new;\r\nend;\r\n$function$\n"",""security_definer"":true}",644
+08_routines,"{""acl"":[""=X/postgres"",""postgres=X/postgres"",""anon=X/postgres"",""authenticated=X/postgres"",""service_role=X/postgres""],""name"":""validate_event_capacity"",""owner"":""postgres"",""result"":""trigger"",""schema"":""public"",""language"":""plpgsql"",""settings"":[""search_path=\""\""""],""arguments"":"""",""signature"":""validate_event_capacity()"",""definition"":""CREATE OR REPLACE FUNCTION public.validate_event_capacity()\n RETURNS trigger\n LANGUAGE plpgsql\n SET search_path TO ''\nAS $function$\r\ndeclare\r\n  v_registered bigint;\r\nbegin\r\n  select count(*)\r\n  into v_registered\r\n  from public.registrations\r\n  where event_id = new.id\r\n    and status = 'registered';\r\n\r\n  if new.capacity < v_registered then\r\n    raise exception\r\n      'Capacity cannot be less than existing registrations (%).',\r\n      v_registered;\r\n  end if;\r\n\r\n  return new;\r\nend;\r\n$function$\n"",""security_definer"":false}",644
+08_routines,"{""acl"":[""postgres=X/postgres"",""authenticated=X/postgres"",""service_role=X/postgres""],""name"":""check_in_ticket"",""owner"":""postgres"",""result"":""TABLE(registration_id uuid, event_id uuid, student_id uuid, student_name text, checked_in_at timestamp with time zone)"",""schema"":""public"",""language"":""plpgsql"",""settings"":[""search_path=\""\""""],""arguments"":""p_registration_id uuid, p_event_id uuid, p_student_id uuid"",""signature"":""check_in_ticket(uuid,uuid,uuid)"",""definition"":""CREATE OR REPLACE FUNCTION public.check_in_ticket(p_registration_id uuid, p_event_id uuid, p_student_id uuid)\n RETURNS TABLE(registration_id uuid, event_id uuid, student_id uuid, student_name text, checked_in_at timestamp with time zone)\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO ''\nAS $function$\r\nDECLARE\r\n  v_organizer uuid := auth.uid();\r\n  v_registration public.registrations%ROWTYPE;\r\n  v_student_name text;\r\n  v_checked_at timestamptz;\r\nBEGIN\r\n  IF v_organizer IS NULL THEN\r\n    RAISE EXCEPTION 'Authentication required.';\r\n  END IF;\r\n\r\n  -- Only the organizer who owns this published\r\n  -- event can check in students.\r\n  IF NOT EXISTS (\r\n    SELECT 1\r\n    FROM public.events AS e\r\n    JOIN public.profiles AS p\r\n      ON p.id = v_organizer\r\n    WHERE e.id = p_event_id\r\n      AND e.organizer_id = v_organizer\r\n      AND e.status = 'published'\r\n      AND p.role = 'organizer'\r\n  ) THEN\r\n    RAISE EXCEPTION\r\n      'You are not authorized to scan this event.';\r\n  END IF;\r\n\r\n  -- Validate the registration and ticket.\r\n  SELECT r.*\r\n  INTO v_registration\r\n  FROM public.registrations AS r\r\n  WHERE r.id = p_registration_id\r\n    AND r.event_id = p_event_id\r\n    AND r.student_id = p_student_id\r\n    AND r.status = 'registered';\r\n\r\n  IF NOT FOUND THEN\r\n    RAISE EXCEPTION\r\n      'Invalid or cancelled ticket.';\r\n  END IF;\r\n\r\n  SELECT p.full_name\r\n  INTO v_student_name\r\n  FROM public.profiles AS p\r\n  WHERE p.id = v_registration.student_id;\r\n\r\n  -- FIX:\r\n  -- Use ON CONFLICT ON CONSTRAINT instead of\r\n  -- ON CONFLICT (registration_id).\r\n  INSERT INTO public.attendance (\r\n    registration_id,\r\n    event_id,\r\n    scanned_by\r\n  )\r\n  VALUES (\r\n    v_registration.id,\r\n    v_registration.event_id,\r\n    v_organizer\r\n  )\r\n  ON CONFLICT ON CONSTRAINT attendance_registration_id_key\r\n  DO NOTHING\r\n  RETURNING public.attendance.checked_in_at\r\n  INTO v_checked_at;\r\n\r\n  IF v_checked_at IS NULL THEN\r\n    RAISE EXCEPTION\r\n      'This ticket has already been checked in.';\r\n  END IF;\r\n\r\n  RETURN QUERY\r\n  SELECT\r\n    v_registration.id,\r\n    v_registration.event_id,\r\n    v_registration.student_id,\r\n    COALESCE(v_student_name, ''),\r\n    v_checked_at;\r\nEND;\r\n$function$\n"",""security_definer"":true}",644
+08_routines,"{""acl"":[""postgres=X/postgres"",""authenticated=X/postgres"",""service_role=X/postgres""],""name"":""get_attendance_records"",""owner"":""postgres"",""result"":""TABLE(registration_id uuid, event_id uuid, student_id uuid, student_name text, registered_at timestamp with time zone, checked_in_at timestamp with time zone)"",""schema"":""public"",""language"":""sql"",""settings"":[""search_path=\""\""""],""arguments"":"""",""signature"":""get_attendance_records()"",""definition"":""CREATE OR REPLACE FUNCTION public.get_attendance_records()\n RETURNS TABLE(registration_id uuid, event_id uuid, student_id uuid, student_name text, registered_at timestamp with time zone, checked_in_at timestamp with time zone)\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO ''\nAS $function$\r\n  select\r\n    r.id,\r\n    r.event_id,\r\n    r.student_id,\r\n    p.full_name,\r\n    r.registered_at,\r\n    a.checked_in_at\r\n  from public.registrations r\r\n  join public.events e\r\n    on e.id = r.event_id\r\n  join public.profiles p\r\n    on p.id = r.student_id\r\n  left join public.attendance a\r\n    on a.registration_id = r.id\r\n  where auth.uid() is not null\r\n    and r.status = 'registered'\r\n    and (\r\n      r.student_id = auth.uid()\r\n      or (\r\n        e.organizer_id = auth.uid()\r\n        and exists (\r\n          select 1\r\n          from public.profiles organizer\r\n          where organizer.id = auth.uid()\r\n            and organizer.role = 'organizer'\r\n        )\r\n      )\r\n    );\r\n$function$\n"",""security_definer"":true}",644
+08_routines,"{""acl"":[""postgres=X/postgres"",""authenticated=X/postgres"",""service_role=X/postgres""],""name"":""get_event_registration_counts"",""owner"":""postgres"",""result"":""TABLE(event_id uuid, registration_count bigint)"",""schema"":""public"",""language"":""sql"",""settings"":[""search_path=\""\""""],""arguments"":"""",""signature"":""get_event_registration_counts()"",""definition"":""CREATE OR REPLACE FUNCTION public.get_event_registration_counts()\n RETURNS TABLE(event_id uuid, registration_count bigint)\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO ''\nAS $function$\r\n  select e.id, count(r.id)\r\n  from public.events e\r\n  left join public.registrations r\r\n    on r.event_id = e.id\r\n    and r.status = 'registered'\r\n  where auth.uid() is not null\r\n    and (\r\n      e.status = 'published'\r\n      or e.organizer_id = auth.uid()\r\n    )\r\n  group by e.id;\r\n$function$\n"",""security_definer"":true}",644
+08_routines,"{""acl"":[""postgres=X/postgres"",""authenticated=X/postgres"",""service_role=X/postgres""],""name"":""register_for_event"",""owner"":""postgres"",""result"":""registrations"",""schema"":""public"",""language"":""plpgsql"",""settings"":[""search_path=\""\""""],""arguments"":""p_event_id uuid"",""signature"":""register_for_event(uuid)"",""definition"":""CREATE OR REPLACE FUNCTION public.register_for_event(p_event_id uuid)\n RETURNS registrations\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO ''\nAS $function$\r\ndeclare\r\n  v_user_id uuid := auth.uid();\r\n  v_event public.events%rowtype;\r\n  v_count integer;\r\n  v_registration public.registrations%rowtype;\r\nbegin\r\n  if v_user_id is null then\r\n    raise exception 'You must be logged in.';\r\n  end if;\r\n\r\n  if not exists (\r\n    select 1\r\n    from public.profiles\r\n    where id = v_user_id\r\n      and role = 'student'\r\n  ) then\r\n    raise exception 'Student access required.';\r\n  end if;\r\n\r\n  -- Lock event row to serialize registrations\r\n  -- and prevent simultaneous overbooking.\r\n  select *\r\n  into v_event\r\n  from public.events\r\n  where id = p_event_id\r\n  for update;\r\n\r\n  if not found then\r\n    raise exception 'Event not found.';\r\n  end if;\r\n\r\n  if v_event.status <> 'published'\r\n     or v_event.ends_at <= now() then\r\n    raise exception 'Registration is closed.';\r\n  end if;\r\n\r\n  if exists (\r\n    select 1\r\n    from public.registrations\r\n    where event_id = p_event_id\r\n      and student_id = v_user_id\r\n  ) then\r\n    raise exception 'You are already registered.';\r\n  end if;\r\n\r\n  select count(*)\r\n  into v_count\r\n  from public.registrations\r\n  where event_id = p_event_id\r\n    and status = 'registered';\r\n\r\n  if v_count >= v_event.capacity then\r\n    raise exception 'This event is full.';\r\n  end if;\r\n\r\n  insert into public.registrations (\r\n    event_id,\r\n    student_id,\r\n    status\r\n  )\r\n  values (\r\n    p_event_id,\r\n    v_user_id,\r\n    'registered'\r\n  )\r\n  returning * into v_registration;\r\n\r\n  return v_registration;\r\nend;\r\n$function$\n"",""security_definer"":true}",644
+09_policies,"{""name"":""Organizers can create own events"",""roles"":[""authenticated""],""table"":""events"",""using"":null,""command"":""a"",""permissive"":true,""with_check"":""((organizer_id = ( SELECT auth.uid() AS uid)) AND (EXISTS ( SELECT 1\n   FROM profiles\n  WHERE ((profiles.id = ( SELECT auth.uid() AS uid)) AND (profiles.role = 'organizer'::text)))))""}",644
+09_policies,"{""name"":""Organizers can delete empty events"",""roles"":[""authenticated""],""table"":""events"",""using"":""((organizer_id = ( SELECT auth.uid() AS uid)) AND (EXISTS ( SELECT 1\n   FROM profiles\n  WHERE ((profiles.id = ( SELECT auth.uid() AS uid)) AND (profiles.role = 'organizer'::text)))) AND (NOT (EXISTS ( SELECT 1\n   FROM registrations\n  WHERE (registrations.event_id = events.id)))))"",""command"":""d"",""permissive"":true,""with_check"":null}",644
+09_policies,"{""name"":""Organizers can update own events"",""roles"":[""authenticated""],""table"":""events"",""using"":""((organizer_id = ( SELECT auth.uid() AS uid)) AND (EXISTS ( SELECT 1\n   FROM profiles\n  WHERE ((profiles.id = ( SELECT auth.uid() AS uid)) AND (profiles.role = 'organizer'::text)))))"",""command"":""w"",""permissive"":true,""with_check"":""((organizer_id = ( SELECT auth.uid() AS uid)) AND (EXISTS ( SELECT 1\n   FROM profiles\n  WHERE ((profiles.id = ( SELECT auth.uid() AS uid)) AND (profiles.role = 'organizer'::text)))))""}",644
+09_policies,"{""name"":""Read own attendance"",""roles"":[""authenticated""],""table"":""attendance"",""using"":""(EXISTS ( SELECT 1\n   FROM registrations r\n  WHERE ((r.id = attendance.registration_id) AND (r.student_id = ( SELECT auth.uid() AS uid)))))"",""command"":""r"",""permissive"":true,""with_check"":null}",644
+09_policies,"{""name"":""Read own profile"",""roles"":[""authenticated""],""table"":""profiles"",""using"":""(id = ( SELECT auth.uid() AS uid))"",""command"":""r"",""permissive"":true,""with_check"":null}",644
+09_policies,"{""name"":""Read own registrations"",""roles"":[""authenticated""],""table"":""registrations"",""using"":""(student_id = ( SELECT auth.uid() AS uid))"",""command"":""r"",""permissive"":true,""with_check"":null}",644
+09_policies,"{""name"":""Read published events"",""roles"":[""authenticated""],""table"":""events"",""using"":""((status = 'published'::text) OR (organizer_id = ( SELECT auth.uid() AS uid)))"",""command"":""r"",""permissive"":true,""with_check"":null}",644
+09_policies,"{""name"":""Update own full name"",""roles"":[""authenticated""],""table"":""profiles"",""using"":""(id = ( SELECT auth.uid() AS uid))"",""command"":""w"",""permissive"":true,""with_check"":""(id = ( SELECT auth.uid() AS uid))""}",644
+11_role_flags,"{""role"":""anon"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""authenticated"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""authenticator"",""inherits"":false,""can_login"":true,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""dashboard_user"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_checkpoint"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_create_subscription"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_database_owner"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_execute_server_program"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_maintain"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_monitor"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_read_all_data"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_read_all_settings"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_read_all_stats"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_read_server_files"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_signal_backend"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_stat_scan_tables"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_use_reserved_connections"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_write_all_data"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pg_write_server_files"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""pgbouncer"",""inherits"":true,""can_login"":true,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""postgres"",""inherits"":true,""can_login"":true,""superuser"":false,""bypass_rls"":true}",644
+11_role_flags,"{""role"":""service_role"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":true}",644
+11_role_flags,"{""role"":""supabase_admin"",""inherits"":true,""can_login"":true,""superuser"":true,""bypass_rls"":true}",644
+11_role_flags,"{""role"":""supabase_auth_admin"",""inherits"":false,""can_login"":true,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""supabase_etl_admin"",""inherits"":true,""can_login"":true,""superuser"":false,""bypass_rls"":true}",644
+11_role_flags,"{""role"":""supabase_privileged_role"",""inherits"":true,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""supabase_read_only_user"",""inherits"":true,""can_login"":true,""superuser"":false,""bypass_rls"":true}",644
+11_role_flags,"{""role"":""supabase_realtime_admin"",""inherits"":false,""can_login"":false,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""supabase_replication_admin"",""inherits"":true,""can_login"":true,""superuser"":false,""bypass_rls"":false}",644
+11_role_flags,"{""role"":""supabase_storage_admin"",""inherits"":false,""can_login"":true,""superuser"":false,""bypass_rls"":false}",644
+12_memberships,"{""role"":""anon"",""member"":""authenticator"",""admin_option"":false}",644
+12_memberships,"{""role"":""anon"",""member"":""postgres"",""admin_option"":true}",644
+12_memberships,"{""role"":""anon"",""member"":""supabase_realtime_admin"",""admin_option"":false}",644
+12_memberships,"{""role"":""authenticated"",""member"":""authenticator"",""admin_option"":false}",644
+12_memberships,"{""role"":""authenticated"",""member"":""postgres"",""admin_option"":true}",644
+12_memberships,"{""role"":""authenticated"",""member"":""supabase_realtime_admin"",""admin_option"":false}",644
+12_memberships,"{""role"":""authenticator"",""member"":""postgres"",""admin_option"":true}",644
+12_memberships,"{""role"":""authenticator"",""member"":""supabase_storage_admin"",""admin_option"":false}",644
+12_memberships,"{""role"":""pg_create_subscription"",""member"":""postgres"",""admin_option"":true}",644
+12_memberships,"{""role"":""pg_monitor"",""member"":""postgres"",""admin_option"":true}",644
+12_memberships,"{""role"":""pg_monitor"",""member"":""supabase_etl_admin"",""admin_option"":false}",644
+12_memberships,"{""role"":""pg_monitor"",""member"":""supabase_read_only_user"",""admin_option"":false}",644
+12_memberships,"{""role"":""pg_read_all_data"",""member"":""postgres"",""admin_option"":true}",644
+12_memberships,"{""role"":""pg_read_all_data"",""member"":""supabase_etl_admin"",""admin_option"":false}",644
+12_memberships,"{""role"":""pg_read_all_data"",""member"":""supabase_read_only_user"",""admin_option"":false}",644
+12_memberships,"{""role"":""pg_read_all_settings"",""member"":""pg_monitor"",""admin_option"":false}",644
+12_memberships,"{""role"":""pg_read_all_stats"",""member"":""pg_monitor"",""admin_option"":false}",644
+12_memberships,"{""role"":""pg_signal_backend"",""member"":""postgres"",""admin_option"":true}",644
+12_memberships,"{""role"":""pg_stat_scan_tables"",""member"":""pg_monitor"",""admin_option"":false}",644
+12_memberships,"{""role"":""service_role"",""member"":""authenticator"",""admin_option"":false}",644
+12_memberships,"{""role"":""service_role"",""member"":""postgres"",""admin_option"":true}",644
+12_memberships,"{""role"":""service_role"",""member"":""supabase_realtime_admin"",""admin_option"":false}",644
+12_memberships,"{""role"":""supabase_privileged_role"",""member"":""postgres"",""admin_option"":false}",644
+12_memberships,"{""role"":""supabase_privileged_role"",""member"":""supabase_etl_admin"",""admin_option"":false}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.attendance"",""allowed"":false,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.attendance"",""allowed"":false,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.attendance"",""allowed"":false,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.attendance"",""allowed"":true,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.attendance"",""allowed"":true,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.attendance"",""allowed"":true,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.attendance"",""allowed"":true,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.events"",""allowed"":true,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.events"",""allowed"":true,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.events"",""allowed"":true,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.events"",""allowed"":true,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.events"",""allowed"":true,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.events"",""allowed"":true,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.events"",""allowed"":true,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.profiles"",""allowed"":false,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.profiles"",""allowed"":false,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.profiles"",""allowed"":false,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.profiles"",""allowed"":true,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.profiles"",""allowed"":true,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.profiles"",""allowed"":true,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.profiles"",""allowed"":true,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.registrations"",""allowed"":false,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.registrations"",""allowed"":false,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.registrations"",""allowed"":false,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.registrations"",""allowed"":true,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.registrations"",""allowed"":true,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.registrations"",""allowed"":true,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""anon"",""table"":""public.registrations"",""allowed"":true,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""allowed"":false,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""allowed"":false,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""allowed"":false,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""allowed"":true,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""allowed"":true,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""allowed"":true,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""allowed"":true,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.events"",""allowed"":true,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.events"",""allowed"":true,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.events"",""allowed"":true,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.events"",""allowed"":true,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.events"",""allowed"":true,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.events"",""allowed"":true,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.events"",""allowed"":true,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""allowed"":false,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""allowed"":false,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""allowed"":false,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""allowed"":true,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""allowed"":true,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""allowed"":true,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""allowed"":true,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""allowed"":false,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""allowed"":false,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""allowed"":false,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""allowed"":true,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""allowed"":true,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""allowed"":true,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""allowed"":true,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.attendance"",""allowed"":false,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.attendance"",""allowed"":false,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.attendance"",""allowed"":false,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.attendance"",""allowed"":false,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.attendance"",""allowed"":false,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.attendance"",""allowed"":false,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.attendance"",""allowed"":false,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.events"",""allowed"":false,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.events"",""allowed"":false,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.events"",""allowed"":false,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.events"",""allowed"":false,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.events"",""allowed"":false,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.events"",""allowed"":false,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.events"",""allowed"":false,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.profiles"",""allowed"":false,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.profiles"",""allowed"":false,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.profiles"",""allowed"":false,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.profiles"",""allowed"":false,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.profiles"",""allowed"":false,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.profiles"",""allowed"":false,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.profiles"",""allowed"":false,""privilege"":""UPDATE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.registrations"",""allowed"":false,""privilege"":""DELETE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.registrations"",""allowed"":false,""privilege"":""INSERT""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.registrations"",""allowed"":false,""privilege"":""REFERENCES""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.registrations"",""allowed"":false,""privilege"":""SELECT""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.registrations"",""allowed"":false,""privilege"":""TRIGGER""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.registrations"",""allowed"":false,""privilege"":""TRUNCATE""}",644
+13_effective_table_privileges,"{""role"":""authenticator"",""table"":""public.registrations"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""checked_in_at"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""checked_in_at"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""checked_in_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""checked_in_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""event_id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""event_id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""event_id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""event_id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""registration_id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""registration_id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""registration_id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""registration_id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""scanned_by"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""scanned_by"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""scanned_by"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.attendance"",""column"":""scanned_by"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""capacity"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""capacity"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""capacity"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""capacity"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""category"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""category"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""category"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""category"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""created_at"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""created_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""created_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""created_at"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""description"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""description"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""description"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""description"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""ends_at"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""ends_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""ends_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""ends_at"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""id"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""id"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""image_url"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""image_url"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""image_url"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""image_url"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""organizer_id"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""organizer_id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""organizer_id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""organizer_id"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""starts_at"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""starts_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""starts_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""starts_at"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""status"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""status"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""status"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""status"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""title"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""title"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""title"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""title"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""venue"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""venue"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""venue"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.events"",""column"":""venue"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""created_at"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""created_at"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""created_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""created_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""full_name"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""full_name"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""full_name"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""full_name"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""role"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""role"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""role"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.profiles"",""column"":""role"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""event_id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""event_id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""event_id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""event_id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""registered_at"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""registered_at"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""registered_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""registered_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""status"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""status"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""status"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""status"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""student_id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""student_id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""student_id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""anon"",""table"":""public.registrations"",""column"":""student_id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""checked_in_at"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""checked_in_at"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""checked_in_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""checked_in_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""event_id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""event_id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""event_id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""event_id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""registration_id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""registration_id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""registration_id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""registration_id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""scanned_by"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""scanned_by"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""scanned_by"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.attendance"",""column"":""scanned_by"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""capacity"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""capacity"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""capacity"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""capacity"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""category"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""category"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""category"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""category"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""created_at"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""created_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""created_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""created_at"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""description"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""description"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""description"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""description"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""ends_at"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""ends_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""ends_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""ends_at"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""id"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""id"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""image_url"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""image_url"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""image_url"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""image_url"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""organizer_id"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""organizer_id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""organizer_id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""organizer_id"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""starts_at"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""starts_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""starts_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""starts_at"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""status"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""status"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""status"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""status"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""title"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""title"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""title"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""title"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""venue"",""allowed"":true,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""venue"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""venue"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.events"",""column"":""venue"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""created_at"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""created_at"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""created_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""created_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""full_name"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""full_name"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""full_name"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""full_name"",""allowed"":true,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""role"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""role"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""role"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.profiles"",""column"":""role"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""event_id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""event_id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""event_id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""event_id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""id"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""registered_at"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""registered_at"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""registered_at"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""registered_at"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""status"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""status"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""status"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""status"",""allowed"":true,""privilege"":""SELECT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""student_id"",""allowed"":false,""privilege"":""INSERT""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""student_id"",""allowed"":false,""privilege"":""UPDATE""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""student_id"",""allowed"":true,""privilege"":""REFERENCES""}",644
+14_effective_column_privileges,"{""role"":""authenticated"",""table"":""public.registrations"",""column"":""student_id"",""allowed"":true,""privilege"":""SELECT""}",644
+15_effective_execute,"{""role"":""anon"",""allowed"":false,""function"":""check_in_ticket(uuid,uuid,uuid)""}",644
+15_effective_execute,"{""role"":""anon"",""allowed"":false,""function"":""get_attendance_records()""}",644
+15_effective_execute,"{""role"":""anon"",""allowed"":false,""function"":""get_event_registration_counts()""}",644
+15_effective_execute,"{""role"":""anon"",""allowed"":false,""function"":""register_for_event(uuid)""}",644
+15_effective_execute,"{""role"":""anon"",""allowed"":true,""function"":""handle_new_user()""}",644
+15_effective_execute,"{""role"":""anon"",""allowed"":true,""function"":""validate_event_capacity()""}",644
+15_effective_execute,"{""role"":""authenticated"",""allowed"":true,""function"":""check_in_ticket(uuid,uuid,uuid)""}",644
+15_effective_execute,"{""role"":""authenticated"",""allowed"":true,""function"":""get_attendance_records()""}",644
+15_effective_execute,"{""role"":""authenticated"",""allowed"":true,""function"":""get_event_registration_counts()""}",644
+15_effective_execute,"{""role"":""authenticated"",""allowed"":true,""function"":""handle_new_user()""}",644
+15_effective_execute,"{""role"":""authenticated"",""allowed"":true,""function"":""register_for_event(uuid)""}",644
+15_effective_execute,"{""role"":""authenticated"",""allowed"":true,""function"":""validate_event_capacity()""}",644
+15_effective_execute,"{""role"":""authenticator"",""allowed"":false,""function"":""check_in_ticket(uuid,uuid,uuid)""}",644
+15_effective_execute,"{""role"":""authenticator"",""allowed"":false,""function"":""get_attendance_records()""}",644
+15_effective_execute,"{""role"":""authenticator"",""allowed"":false,""function"":""get_event_registration_counts()""}",644
+15_effective_execute,"{""role"":""authenticator"",""allowed"":false,""function"":""register_for_event(uuid)""}",644
+15_effective_execute,"{""role"":""authenticator"",""allowed"":true,""function"":""handle_new_user()""}",644
+15_effective_execute,"{""role"":""authenticator"",""allowed"":true,""function"":""validate_event_capacity()""}",644
+16_default_acls,"{""acl"":[""postgres=a*r*w*d*D*x*t*m*/supabase_admin""],""owner"":""supabase_admin"",""schema"":""extensions"",""object_kind"":""r""}",644
+16_default_acls,"{""acl"":[""postgres=a*r*wdDxtm/supabase_admin"",""dashboard_user=arwdDxtm/supabase_admin""],""owner"":""supabase_admin"",""schema"":""realtime"",""object_kind"":""r""}",644
+16_default_acls,"{""acl"":[""postgres=arwdDxtm/postgres"",""anon=arwdDxtm/postgres"",""authenticated=arwdDxtm/postgres"",""service_role=arwdDxtm/postgres""],""owner"":""postgres"",""schema"":""public"",""object_kind"":""r""}",644
+16_default_acls,"{""acl"":[""postgres=arwdDxtm/postgres"",""anon=arwdDxtm/postgres"",""authenticated=arwdDxtm/postgres"",""service_role=arwdDxtm/postgres""],""owner"":""postgres"",""schema"":""storage"",""object_kind"":""r""}",644
+16_default_acls,"{""acl"":[""postgres=arwdDxtm/supabase_admin"",""anon=arwdDxtm/supabase_admin"",""authenticated=arwdDxtm/supabase_admin"",""service_role=arwdDxtm/supabase_admin""],""owner"":""supabase_admin"",""schema"":""graphql_public"",""object_kind"":""r""}",644
+16_default_acls,"{""acl"":[""postgres=arwdDxtm/supabase_admin"",""anon=arwdDxtm/supabase_admin"",""authenticated=arwdDxtm/supabase_admin"",""service_role=arwdDxtm/supabase_admin""],""owner"":""supabase_admin"",""schema"":""graphql"",""object_kind"":""r""}",644
+16_default_acls,"{""acl"":[""postgres=arwdDxtm/supabase_admin"",""anon=arwdDxtm/supabase_admin"",""authenticated=arwdDxtm/supabase_admin"",""service_role=arwdDxtm/supabase_admin""],""owner"":""supabase_admin"",""schema"":""public"",""object_kind"":""r""}",644
+16_default_acls,"{""acl"":[""postgres=arwdDxtm/supabase_auth_admin"",""dashboard_user=arwdDxtm/supabase_auth_admin""],""owner"":""supabase_auth_admin"",""schema"":""auth"",""object_kind"":""r""}",644
+16_default_acls,"{""acl"":[""postgres=r*w*U*/supabase_admin""],""owner"":""supabase_admin"",""schema"":""extensions"",""object_kind"":""S""}",644
+16_default_acls,"{""acl"":[""postgres=rwU/postgres"",""anon=rwU/postgres"",""authenticated=rwU/postgres"",""service_role=rwU/postgres""],""owner"":""postgres"",""schema"":""public"",""object_kind"":""S""}",644
+16_default_acls,"{""acl"":[""postgres=rwU/postgres"",""anon=rwU/postgres"",""authenticated=rwU/postgres"",""service_role=rwU/postgres""],""owner"":""postgres"",""schema"":""storage"",""object_kind"":""S""}",644
+16_default_acls,"{""acl"":[""postgres=rwU/supabase_admin"",""anon=rwU/supabase_admin"",""authenticated=rwU/supabase_admin"",""service_role=rwU/supabase_admin""],""owner"":""supabase_admin"",""schema"":""graphql_public"",""object_kind"":""S""}",644
+16_default_acls,"{""acl"":[""postgres=rwU/supabase_admin"",""anon=rwU/supabase_admin"",""authenticated=rwU/supabase_admin"",""service_role=rwU/supabase_admin""],""owner"":""supabase_admin"",""schema"":""graphql"",""object_kind"":""S""}",644
+16_default_acls,"{""acl"":[""postgres=rwU/supabase_admin"",""anon=rwU/supabase_admin"",""authenticated=rwU/supabase_admin"",""service_role=rwU/supabase_admin""],""owner"":""supabase_admin"",""schema"":""public"",""object_kind"":""S""}",644
+16_default_acls,"{""acl"":[""postgres=rwU/supabase_admin"",""dashboard_user=rwU/supabase_admin""],""owner"":""supabase_admin"",""schema"":""realtime"",""object_kind"":""S""}",644
+16_default_acls,"{""acl"":[""postgres=rwU/supabase_auth_admin"",""dashboard_user=rwU/supabase_auth_admin""],""owner"":""supabase_auth_admin"",""schema"":""auth"",""object_kind"":""S""}",644
+16_default_acls,"{""acl"":[""postgres=X*/supabase_admin""],""owner"":""supabase_admin"",""schema"":""extensions"",""object_kind"":""f""}",644
+16_default_acls,"{""acl"":[""postgres=X/postgres"",""anon=X/postgres"",""authenticated=X/postgres"",""service_role=X/postgres""],""owner"":""postgres"",""schema"":""public"",""object_kind"":""f""}",644
+16_default_acls,"{""acl"":[""postgres=X/postgres"",""anon=X/postgres"",""authenticated=X/postgres"",""service_role=X/postgres""],""owner"":""postgres"",""schema"":""storage"",""object_kind"":""f""}",644
+16_default_acls,"{""acl"":[""postgres=X/supabase_admin"",""anon=X/supabase_admin"",""authenticated=X/supabase_admin"",""service_role=X/supabase_admin""],""owner"":""supabase_admin"",""schema"":""graphql_public"",""object_kind"":""f""}",644
+16_default_acls,"{""acl"":[""postgres=X/supabase_admin"",""anon=X/supabase_admin"",""authenticated=X/supabase_admin"",""service_role=X/supabase_admin""],""owner"":""supabase_admin"",""schema"":""graphql"",""object_kind"":""f""}",644
+16_default_acls,"{""acl"":[""postgres=X/supabase_admin"",""anon=X/supabase_admin"",""authenticated=X/supabase_admin"",""service_role=X/supabase_admin""],""owner"":""supabase_admin"",""schema"":""public"",""object_kind"":""f""}",644
+16_default_acls,"{""acl"":[""postgres=X/supabase_admin"",""dashboard_user=X/supabase_admin""],""owner"":""supabase_admin"",""schema"":""realtime"",""object_kind"":""f""}",644
+16_default_acls,"{""acl"":[""postgres=X/supabase_auth_admin"",""dashboard_user=X/supabase_auth_admin""],""owner"":""supabase_auth_admin"",""schema"":""auth"",""object_kind"":""f""}",644
+18_other_schema_routine_inventory,"{""schema"":""auth"",""signature"":""auth.email()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""auth"",""signature"":""auth.jwt()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""auth"",""signature"":""auth.role()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""auth"",""signature"":""auth.uid()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""armor(bytea,text[],text[])"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""armor(bytea)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""crypt(text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""dearmor(text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""decrypt_iv(bytea,bytea,bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""decrypt(bytea,bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""digest(bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""digest(text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""encrypt_iv(bytea,bytea,bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""encrypt(bytea,bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""extensions.gen_random_uuid()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""gen_random_bytes(integer)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""gen_salt(text,integer)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""gen_salt(text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""grant_pg_cron_access()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""grant_pg_graphql_access()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""grant_pg_net_access()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""hmac(bytea,bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""hmac(text,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pg_stat_statements_info()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pg_stat_statements_reset(oid,oid,bigint,boolean)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pg_stat_statements(boolean)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_armor_headers(text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_key_id(bytea)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_pub_decrypt_bytea(bytea,bytea,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_pub_decrypt_bytea(bytea,bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_pub_decrypt_bytea(bytea,bytea)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_pub_decrypt(bytea,bytea,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_pub_decrypt(bytea,bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_pub_decrypt(bytea,bytea)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_pub_encrypt_bytea(bytea,bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_pub_encrypt_bytea(bytea,bytea)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_pub_encrypt(text,bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_pub_encrypt(text,bytea)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_sym_decrypt_bytea(bytea,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_sym_decrypt_bytea(bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_sym_decrypt(bytea,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_sym_decrypt(bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_sym_encrypt_bytea(bytea,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_sym_encrypt_bytea(bytea,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_sym_encrypt(text,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgp_sym_encrypt(text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgrst_ddl_watch()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""pgrst_drop_watch()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""set_graphql_placeholder()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""uuid_generate_v1()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""uuid_generate_v1mc()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""uuid_generate_v3(uuid,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""uuid_generate_v4()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""uuid_generate_v5(uuid,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""uuid_nil()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""uuid_ns_dns()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""uuid_ns_oid()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""uuid_ns_url()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""extensions"",""signature"":""uuid_ns_x500()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""graphql_public"",""signature"":""graphql_public.graphql(text,text,jsonb,jsonb)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.\""cast\""(text,regtype)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.apply_rls(jsonb,integer)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.authorize(text,text,text,text,text,text[],text[])"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.broadcast_changes(text,text,text,text,text,record,record,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.build_prepared_statement_sql(text,regclass,realtime.wal_column[])"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.check_equality_op(realtime.equality_op,regtype,text,text,boolean)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.check_equality_op(realtime.equality_op,regtype,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.is_visible_through_filters(realtime.wal_column[],realtime.user_defined_filter[])"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.list_changes_sync(name,name,integer,integer)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.list_changes(name,name,integer,integer)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.quote_wal2json(regclass)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.send_binary(bytea,text,text,boolean)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.send(jsonb,text,text,boolean)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.settled_changes(name,integer,text[])"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.subscription_check_filters()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.to_regrole(text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.topic()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""realtime"",""signature"":""realtime.wal2json_escape_identifier(text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.allow_any_operation(text[])"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.allow_only_operation(text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.can_insert_object(text,text,uuid,jsonb)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.delete_lifecycle_objects(uuid[])"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.enforce_bucket_lifecycle_service_role()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.enforce_bucket_name_length()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.enforce_versioning_status_transition()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.extension(text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.filename(text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.foldername(text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.get_common_prefix(text,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.get_size_by_bucket(text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.list_multipart_uploads_with_delimiter(text,text,text,integer,text,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.list_objects_with_delimiter(text,text,text,integer,text,text,text,text,text,timestamp with time zone,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.operation()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.protect_active_lifecycle_states()"",""security_definer"":true}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.protect_bucket_control_columns()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.protect_delete()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.reconcile_lifecycle_state(text,boolean)"",""security_definer"":true}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.search_by_timestamp(text,text,integer,integer,text,text,text,text,text,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.search_v2(text,text,integer,integer,text,text,text,text,text,text,timestamp with time zone,text,boolean)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.search(text,text,integer,integer,integer,text,text,text,text,text)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.update_updated_at_column()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""storage"",""signature"":""storage.wake_lifecycle_state()"",""security_definer"":true}",644
+18_other_schema_routine_inventory,"{""schema"":""vault"",""signature"":""vault._crypto_aead_det_decrypt(bytea,bytea,bigint,bytea,bytea)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""vault"",""signature"":""vault._crypto_aead_det_encrypt(bytea,bytea,bigint,bytea,bytea)"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""vault"",""signature"":""vault._crypto_aead_det_noncegen()"",""security_definer"":false}",644
+18_other_schema_routine_inventory,"{""schema"":""vault"",""signature"":""vault.create_secret(text,text,text,uuid)"",""security_definer"":true}",644
+18_other_schema_routine_inventory,"{""schema"":""vault"",""signature"":""vault.update_secret(uuid,text,text,text,uuid)"",""security_definer"":true}",644
+20_schema_privileges,"{""role"":""anon"",""usage"":false,""create"":false,""schema"":""vault""}",644
+20_schema_privileges,"{""role"":""anon"",""usage"":true,""create"":false,""schema"":""auth""}",644
+20_schema_privileges,"{""role"":""anon"",""usage"":true,""create"":false,""schema"":""extensions""}",644
+20_schema_privileges,"{""role"":""anon"",""usage"":true,""create"":false,""schema"":""graphql_public""}",644
+20_schema_privileges,"{""role"":""anon"",""usage"":true,""create"":false,""schema"":""graphql""}",644
+20_schema_privileges,"{""role"":""anon"",""usage"":true,""create"":false,""schema"":""public""}",644
+20_schema_privileges,"{""role"":""anon"",""usage"":true,""create"":false,""schema"":""realtime""}",644
+20_schema_privileges,"{""role"":""anon"",""usage"":true,""create"":false,""schema"":""storage""}",644
+20_schema_privileges,"{""role"":""authenticated"",""usage"":false,""create"":false,""schema"":""vault""}",644
+20_schema_privileges,"{""role"":""authenticated"",""usage"":true,""create"":false,""schema"":""auth""}",644
+20_schema_privileges,"{""role"":""authenticated"",""usage"":true,""create"":false,""schema"":""extensions""}",644
+20_schema_privileges,"{""role"":""authenticated"",""usage"":true,""create"":false,""schema"":""graphql_public""}",644
+20_schema_privileges,"{""role"":""authenticated"",""usage"":true,""create"":false,""schema"":""graphql""}",644
+20_schema_privileges,"{""role"":""authenticated"",""usage"":true,""create"":false,""schema"":""public""}",644
+20_schema_privileges,"{""role"":""authenticated"",""usage"":true,""create"":false,""schema"":""realtime""}",644
+20_schema_privileges,"{""role"":""authenticated"",""usage"":true,""create"":false,""schema"":""storage""}",644
+20_schema_privileges,"{""role"":""authenticator"",""usage"":false,""create"":false,""schema"":""auth""}",644
+20_schema_privileges,"{""role"":""authenticator"",""usage"":false,""create"":false,""schema"":""extensions""}",644
+20_schema_privileges,"{""role"":""authenticator"",""usage"":false,""create"":false,""schema"":""graphql_public""}",644
+20_schema_privileges,"{""role"":""authenticator"",""usage"":false,""create"":false,""schema"":""graphql""}",644
+20_schema_privileges,"{""role"":""authenticator"",""usage"":false,""create"":false,""schema"":""realtime""}",644
+20_schema_privileges,"{""role"":""authenticator"",""usage"":false,""create"":false,""schema"":""storage""}",644
+20_schema_privileges,"{""role"":""authenticator"",""usage"":false,""create"":false,""schema"":""vault""}",644
+20_schema_privileges,"{""role"":""authenticator"",""usage"":true,""create"":false,""schema"":""public""}",644

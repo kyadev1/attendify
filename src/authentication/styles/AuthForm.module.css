@@ -1,0 +1,15 @@
+.form, .field, .links { display: grid; min-width: 0; }
+.form { gap: var(--space-3); margin-top: var(--space-2); }
+.field { gap: var(--space-2); }
+.field label { font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); }
+.field input, .field select { width: 100%; min-width: 0; min-height: var(--control-min-height); padding: var(--space-2) var(--space-3); border: 1px solid var(--color-control-border); border-radius: var(--radius-control); background: var(--color-surface); color: var(--color-text); }
+.field input:focus-visible, .field select:focus-visible { outline-color: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+.field small { color: var(--color-text-secondary); }
+.checkbox { display: flex; align-items: center; gap: var(--space-2); min-height: var(--control-min-height); cursor: pointer; font-size: var(--font-size-sm); }
+.checkbox input { width: 1.125rem; height: 1.125rem; accent-color: var(--color-success-text); }
+.error { padding: var(--space-4); border: 1px solid var(--color-danger); border-radius: var(--radius-control); background: var(--color-danger-background); color: var(--color-danger-text); overflow-wrap: anywhere; }
+.submit { width: 100%; background: var(--color-primary); color: var(--color-surface); border-radius: var(--radius-control); }
+.submit:hover:not(:disabled) { background: var(--color-primary-hover); }
+.links { text-align: center; gap: var(--space-2); margin-top: var(--space-1); font-size: var(--font-size-sm); }
+.links a { color: var(--color-text-secondary); text-decoration: none; padding-block: var(--space-1); }
+.links a:hover { color: var(--color-primary-dark); text-decoration: underline; }

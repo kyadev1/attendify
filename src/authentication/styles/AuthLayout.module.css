@@ -1,0 +1,18 @@
+.layout {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  align-items: center;
+  padding: var(--space-4);
+  background-color: var(--color-background);
+  background-image: linear-gradient(rgb(255 255 255 / 12%), rgb(255 255 255 / 12%)), url("../../assets/attendify-login-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card { width: 100%; max-width: 28rem; margin-inline: auto; display: grid; gap: var(--space-3); min-width: 0; padding: var(--space-6); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-dialog); box-shadow: var(--shadow-md); }
+.brand { display: block; justify-self: center; border-radius: var(--radius-control); }
+.logo { display: block; width: 5rem; max-width: 100%; height: auto; object-fit: contain; }
+.card h1 { font-size: var(--font-size-2xl); text-align: center; }
+.subtitle { color: var(--color-text-secondary); font-size: var(--font-size-sm); text-align: center; }
+@media (min-width: 768px) { .card { padding: var(--space-8); } }

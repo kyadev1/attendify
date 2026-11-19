@@ -1,0 +1,7 @@
+backend/
+docs/
+tests/
+.env
+.env.*
+**/.env
+**/.env.*

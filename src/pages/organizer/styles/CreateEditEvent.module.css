@@ -1,0 +1,5 @@
+.create-edit-event {
+  min-width: 0;
+  display: grid;
+  gap: var(--space-6);
+}

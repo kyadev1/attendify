@@ -1,0 +1,6 @@
+export { default as StudentLayout } from '../pages/student/components/StudentLayout'
+export { default as StudentDashboard } from '../pages/student/components/StudentDashboard'
+export { default as BrowseEvents } from '../pages/student/components/BrowseEvents'
+export { default as EventDetails } from '../pages/student/components/EventDetails'
+export { default as MyBookings } from '../pages/student/components/MyBookings'
+export { default as Profile } from '../pages/student/components/Profile'

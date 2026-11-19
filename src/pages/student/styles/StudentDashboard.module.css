@@ -1,0 +1,56 @@
+.dashboard { display: grid; gap: var(--space-8); min-width: 0; container-type: inline-size; }
+.header, .sectionHeader { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4); }
+.header h1 { font-size: var(--font-size-2xl); }
+.welcome { margin-top: var(--space-3); font-weight: var(--font-weight-medium); }
+.description { margin-top: var(--space-1); color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+.primaryButton, .ticketButton, .textAction, .iconAction { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); text-decoration: none; min-height: var(--control-min-height); font-weight: var(--font-weight-semibold); font-size: var(--font-size-sm); }
+.primaryButton, .ticketButton { padding: var(--space-2) var(--space-4); border-radius: var(--radius-control); }
+.primaryButton { background: var(--color-primary); color: var(--color-text); }
+.primaryButton:hover { background: var(--color-primary-hover); }
+.stats { display: grid; gap: var(--space-4); margin: 0; grid-template-columns: minmax(0, 1fr); }
+.statCard, .eventCard, .recentPanel, .empty { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); box-shadow: var(--shadow-sm); min-width: 0; }
+.statCard { padding: var(--space-5); }
+.statCard dt { display: flex; align-items: center; gap: var(--space-3); font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+.iconBox { display: inline-flex; padding: var(--space-3); border-radius: var(--radius-control); flex-shrink: 0; }
+.green { background: var(--color-primary-light); color: var(--color-primary-dark); }
+.blue { background: var(--color-info-background); color: var(--color-info-text); }
+.statCard dd { margin: var(--space-4) 0 0; display: grid; gap: var(--space-1); }
+.statCard dd strong { font-size: var(--font-size-3xl); line-height: var(--line-height-tight); }
+.statCard dd span { color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+.section { display: grid; gap: var(--space-4); }
+.sectionHeader h2 { font-size: var(--font-size-lg); }
+.textAction { color: var(--color-primary-dark); }
+.textAction:hover { text-decoration: underline; }
+.eventGrid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-4); list-style: none; padding: 0; margin: 0; }
+.eventGrid > li { min-width: 0; }
+.eventCard { height: 100%; padding: var(--space-5); display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4); }
+.eventCard h3 { font-size: var(--font-size-lg); }
+.eventCard h3 a, .table th a, .mobileList h3 a { color: var(--color-text); text-decoration: none; overflow-wrap: anywhere; }
+.eventCard h3 a:hover, .table th a:hover, .mobileList h3 a:hover { color: var(--color-primary-dark); text-decoration: underline; }
+.eventInfo { display: grid; gap: var(--space-3); font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+.eventInfo p { display: flex; align-items: center; gap: var(--space-2); }
+.eventInfo svg { flex-shrink: 0; }
+.ticketButton { margin-top: auto; color: var(--color-primary-dark); background: var(--color-primary-light); border: 1px solid var(--color-border); }
+.ticketButton:hover { background: var(--color-success-background); }
+.registered, .attended { display: inline-block; padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); font-size: var(--font-size-xs); font-weight: var(--font-weight-semibold); white-space: nowrap; }
+.registered { color: var(--color-info-text); background: var(--color-info-background); }
+.attended { color: var(--color-success-text); background: var(--color-success-background); }
+.recentPanel { padding: var(--space-5); }
+.table { display: none; border-collapse: collapse; width: 100%; font-size: var(--font-size-sm); margin-top: var(--space-4); text-align: left; table-layout: fixed; }
+.table th, .table td { padding: var(--space-3); border-bottom: 1px solid var(--color-border); overflow-wrap: anywhere; }
+.table thead th { color: var(--color-text-secondary); font-weight: var(--font-weight-medium); }
+.table th:first-child { width: 34%; }
+.table th:last-child { width: 12%; }
+.table tbody tr:last-child > * { border-bottom: 0; }
+.iconAction { width: var(--control-min-height); border-radius: var(--radius-control); color: var(--color-primary-dark); }
+.iconAction:hover { background: var(--color-primary-light); }
+.mobileList { list-style: none; margin: var(--space-4) 0 0; padding: 0; }
+.mobileList li { display: grid; gap: var(--space-2); padding-block: var(--space-4); border-top: 1px solid var(--color-border); }
+.mobileList h3 { font-size: var(--font-size-md); }
+.mobileList p { color: var(--color-text-secondary); font-size: var(--font-size-sm); }
+.mobileActions { display: flex; justify-content: space-between; align-items: center; }
+.empty { display: grid; justify-items: start; gap: var(--space-3); padding: var(--space-6); color: var(--color-text-secondary); }
+.recentPanel .empty { border: 0; box-shadow: none; padding-inline: 0; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@container (min-width: 560px) { .stats, .eventGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@container (min-width: 760px) { .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); } .table { display: table; } .mobileList { display: none; } }

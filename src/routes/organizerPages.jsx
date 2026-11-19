@@ -1,0 +1,5 @@
+export { default as OrganizerLayout } from '../pages/organizer/components/OrganizerLayout'
+export { default as OrganizerDashboard } from '../pages/organizer/components/OrganizerDashboard'
+export { default as MyEvents } from '../pages/organizer/components/MyEvents'
+export { default as CreateEditEvent } from '../pages/organizer/components/CreateEditEvent'
+export { default as EventManagement } from '../pages/organizer/components/EventManagement'
